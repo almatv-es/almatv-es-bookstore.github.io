@@ -1,43 +1,26 @@
-# almatv-es — Online Bookstore
+# 📚 almatv-es — Online Bookstore
 
-A polished static bookstore storefront built with HTML, CSS and JavaScript. It is ready to deploy on GitHub Pages and includes a large multi-category catalog, search, filters, sorting, product details, a local cart, newsletter UI and responsive design.
+A polished responsive bookstore storefront featuring **128 books across 16 categories**.
 
-## Included
+## Highlights
+- Real book titles, authors and ISBN-based cover images
+- U.S. retail reference prices in USD
+- Horror, Action & Adventure, Fantasy, Mystery, Romance, Science Fiction, Self-Help, Business, Biography, History, Children, Classics, Young Adult, Poetry, Manga & Comics, and Science & Technology
+- Search, category filtering and price sorting
+- Book detail modal, ratings, wishlist buttons and shopping cart
+- Responsive layout and dark mode
+- almatv-es brand logo included in header, hero and footer
+- Book advisory and support contact areas
 
-- 60+ books across horror, action & adventure, fantasy, mystery & thriller, romance, science fiction, self-help, business, biography, history, children, classics, young adult and poetry.
-- Real edition ISBNs and cover-image URLs loaded from the Open Library Covers service.
-- U.S. retail reference prices in USD. Prices can change by retailer, edition and promotion, so verify before a commercial launch.
-- Responsive desktop, tablet and mobile layout.
-- Search, category filtering, sorting, book modal, favorites UI and cart using `localStorage`.
-- Custom `almatv-es` logo optimized to a lightweight WebP file.
-- Demo support numbers using the reserved fictional 555 range.
+## Book Advisory
+- Demo advisory number: `+1 (212) 555-0183`
+- Demo support number: `+1 (212) 555-0147`
+- Email: `advisory@almatv-es.com`
 
-## Run locally
+> Replace demo contact details with your real business contact information before publishing.
 
-Open `index.html` in a browser. For best results, use a local web server:
+## Covers & prices
+Book covers are requested from Open Library using each edition's ISBN. If a cover cannot be loaded, the site automatically shows a branded fallback cover. Prices are reference U.S. retail prices for the listed editions and may change by retailer, edition or promotion.
 
-```bash
-python -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
-
-## GitHub Pages
-
-1. Upload all files to the repository root.
-2. Open **Settings → Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Choose your main branch and `/ (root)`.
-5. Save.
-
-## Catalog note
-
-Book cover images are requested from Open Library by ISBN. If a cover cannot load, the site automatically creates a branded fallback cover. Prices are reference U.S. retail prices and should be rechecked before using the site as a live commercial catalog.
-
-## Contact placeholders
-
-- Support: `+1 (212) 555-0147`
-- Book advisory: `+1 (212) 555-0183`
-- Email: `support@almatv-es.com`
-
-Replace these with your actual business contact details before launch.
+## Run
+Open `index.html` in a browser, or publish the repository with GitHub Pages.

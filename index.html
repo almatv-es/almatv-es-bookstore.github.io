@@ -6,6 +6,7 @@
   <meta name="description" content="almatv-es — a modern online bookstore with fiction, horror, fantasy, romance, business, kids books and more." />
   <title>almatv-es | Online Bookstore</title>
   <link rel="preconnect" href="https://covers.openlibrary.org" crossorigin>
+  <link rel="icon" type="image/webp" href="assets/logo.webp" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -19,6 +20,7 @@
       <a href="#catalog">Shop</a>
       <a href="#categories">Categories</a>
       <a href="#about">About</a>
+      <a href="#advisory">Advisory</a>
       <a href="#support">Support</a>
     </nav>
     <div class="header-actions">
@@ -37,9 +39,10 @@
           <a class="primary-btn" href="#catalog">Browse all books</a>
           <a class="secondary-btn" href="#categories">Explore categories</a>
         </div>
-        <div class="hero-proof"><span>★ 4.9 reader rating</span><span>60+ curated titles</span><span>12 genres</span></div>
+        <div class="hero-proof"><span>★ 4.9 reader rating</span><span>128 curated titles</span><span>16 genres</span></div>
       </div>
       <div class="hero-visual" aria-hidden="true">
+        <div class="hero-brand-badge"><img src="assets/logo.webp" alt="" /><span>almatv-es<br><small>Curated bookstore</small></span></div>
         <div class="book-stack">
           <div class="hero-book b1"><span>HORROR</span><b>The Shining</b><small>Stephen King</small></div>
           <div class="hero-book b2"><span>FANTASY</span><b>The Hobbit</b><small>J. R. R. Tolkien</small></div>
@@ -94,16 +97,28 @@
         <small id="newsMsg"></small>
       </div>
     </section>
+
+    <section id="advisory" class="advisory wrap">
+      <div class="advisory-main">
+        <img src="assets/logo.webp" alt="almatv-es logo" />
+        <div><span class="eyebrow">PERSONAL BOOK ADVISORY</span><h2>Not sure what to read next?</h2><p>Tell us the genres you enjoy, your favorite authors or the mood you want, and our book advisory service will help you narrow down your next read.</p></div>
+      </div>
+      <div class="advisory-actions">
+        <a class="advisory-call" href="tel:+12125550183"><span>Book advisory</span><b>+1 (212) 555-0183</b><small>Mon–Fri • 9 AM–6 PM ET</small></a>
+        <a class="advisory-call" href="mailto:advisory@almatv-es.com"><span>Email advisory</span><b>advisory@almatv-es.com</b><small>Reading recommendations & catalog help</small></a>
+      </div>
+      <p class="demo-note">Demo contact details are included for storefront presentation. Replace them with your real business phone and email before launch.</p>
+    </section>
   </main>
 
   <footer id="support">
     <div class="footer-grid wrap">
       <div class="footer-brand"><img src="assets/logo.webp" alt="almatv-es" /><h3>almatv-es</h3><p>Discover your next great story.</p></div>
       <div><h4>Shop</h4><a href="#catalog">All books</a><a href="#categories">Categories</a><a href="#catalog">Best sellers</a><a href="#catalog">New releases</a></div>
-      <div><h4>Customer care</h4><span>Support: +1 (212) 555-0147</span><span>Book advisory: +1 (212) 555-0183</span><span>support@almatv-es.com</span><span>Mon–Fri, 9 AM–6 PM ET</span></div>
+      <div><h4>Customer care</h4><a href="tel:+12125550147">Support: +1 (212) 555-0147</a><a href="tel:+12125550183">Book advisory: +1 (212) 555-0183</a><a href="mailto:support@almatv-es.com">support@almatv-es.com</a><span>Mon–Fri, 9 AM–6 PM ET</span></div>
       <div><h4>Store details</h4><span>New York, NY 10003, USA</span><span>Prices shown in USD</span><span>Secure checkout integration ready</span></div>
     </div>
-    <div class="footer-bottom wrap"><span>© 2026 almatv-es. All rights reserved.</span><span>Book cover images are loaded from Open Library by ISBN. Retail prices are reference prices and can change.</span></div>
+    <div class="footer-bottom wrap"><span>© 2026 almatv-es. All rights reserved.</span><span>Book cover images are loaded by ISBN from Open Library. Prices are U.S. retail references for the listed editions and can change by retailer or promotion.</span></div>
   </footer>
 
   <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
