@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="almatv-es — a modern online bookstore with fiction, horror, fantasy, romance, business, kids books and more." />
+  <title>almatv-es | Online Bookstore</title>
+  <link rel="preconnect" href="https://covers.openlibrary.org" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Free U.S. shipping on orders over $60 <span>•</span> New readers get 10% off with code <b>ALMA10</b></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="almatv-es home">
+      <img src="assets/logo.webp" alt="almatv-es logo" />
+      <div><strong>almatv-es</strong><small>Books for every story</small></div>
+    </a>
+    <nav>
+      <a href="#catalog">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+      <a href="#support">Support</a>
+    </nav>
+    <div class="header-actions">
+      <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">☾</button>
+      <button id="cartBtn" class="cart-btn" aria-label="Open cart">Cart <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">CURATED FOR CURIOUS MINDS</span>
+        <h1>Find the book that<br><em>stays with you.</em></h1>
+        <p>Explore bestselling fiction, chilling horror, epic fantasy, romance, business, history, children’s books and timeless classics — all in one beautiful bookstore.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#catalog">Browse all books</a>
+          <a class="secondary-btn" href="#categories">Explore categories</a>
+        </div>
+        <div class="hero-proof"><span>★ 4.9 reader rating</span><span>60+ curated titles</span><span>12 genres</span></div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="book-stack">
+          <div class="hero-book b1"><span>HORROR</span><b>The Shining</b><small>Stephen King</small></div>
+          <div class="hero-book b2"><span>FANTASY</span><b>The Hobbit</b><small>J. R. R. Tolkien</small></div>
+          <div class="hero-book b3"><span>SELF-HELP</span><b>Atomic Habits</b><small>James Clear</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="category-section wrap">
+      <div class="section-heading"><div><span class="eyebrow">SHOP YOUR MOOD</span><h2>Browse by category</h2></div><p>From terrifying classics to practical business books.</p></div>
+      <div id="categoryTiles" class="category-tiles"></div>
+    </section>
+
+    <section id="catalog" class="catalog wrap">
+      <div class="section-heading"><div><span class="eyebrow">THE COLLECTION</span><h2>Books worth opening</h2></div><p id="resultCount"></p></div>
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search by title, author or genre…" /></label>
+        <select id="sortSelect" aria-label="Sort books">
+          <option value="featured">Featured</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="title">Title A–Z</option>
+        </select>
+      </div>
+      <div id="filterChips" class="filter-chips"></div>
+      <div id="bookGrid" class="book-grid"></div>
+      <div id="emptyState" class="empty-state hidden">No books found. Try a different search or category.</div>
+    </section>
+
+    <section class="value-strip">
+      <div><b>Fast shipping</b><span>Tracked delivery across the U.S.</span></div>
+      <div><b>Curated selection</b><span>Popular books across every major genre.</span></div>
+      <div><b>Reader support</b><span>Help choosing your next great read.</span></div>
+      <div><b>Secure experience</b><span>A clean storefront ready for checkout integration.</span></div>
+    </section>
+
+    <section id="about" class="about wrap">
+      <div class="about-card">
+        <span class="eyebrow">OUR STORY</span>
+        <h2>A bookstore built around discovery.</h2>
+        <p><strong>almatv-es</strong> brings together books for every reader — page-turning thrillers, immersive fantasy, thoughtful nonfiction, children’s favorites and classics that never age.</p>
+        <p>Our catalog is designed to be simple to explore, easy to search and enjoyable on desktop or mobile.</p>
+      </div>
+      <div class="newsletter-card">
+        <span class="eyebrow">THE READING LIST</span>
+        <h2>New books, straight to your inbox.</h2>
+        <p>Get new arrivals, staff picks and seasonal reading lists.</p>
+        <form onsubmit="event.preventDefault(); this.reset(); document.getElementById('newsMsg').textContent='Thanks — you’re on the list!';">
+          <input type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <small id="newsMsg"></small>
+      </div>
+    </section>
+  </main>
+
+  <footer id="support">
+    <div class="footer-grid wrap">
+      <div class="footer-brand"><img src="assets/logo.webp" alt="almatv-es" /><h3>almatv-es</h3><p>Discover your next great story.</p></div>
+      <div><h4>Shop</h4><a href="#catalog">All books</a><a href="#categories">Categories</a><a href="#catalog">Best sellers</a><a href="#catalog">New releases</a></div>
+      <div><h4>Customer care</h4><span>Support: +1 (212) 555-0147</span><span>Book advisory: +1 (212) 555-0183</span><span>support@almatv-es.com</span><span>Mon–Fri, 9 AM–6 PM ET</span></div>
+      <div><h4>Store details</h4><span>New York, NY 10003, USA</span><span>Prices shown in USD</span><span>Secure checkout integration ready</span></div>
+    </div>
+    <div class="footer-bottom wrap"><span>© 2026 almatv-es. All rights reserved.</span><span>Book cover images are loaded from Open Library by ISBN. Retail prices are reference prices and can change.</span></div>
+  </footer>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-head"><h3>Your cart</h3><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>Subtotal</span><b id="cartTotal">$0.00</b></div>
+    <button class="checkout-btn" onclick="alert('Checkout integration can be connected to your preferred payment provider.')">Proceed to checkout</button>
+    <small>Demo storefront — payment gateway not connected yet.</small>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <div id="bookModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button id="modalClose" class="modal-close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
